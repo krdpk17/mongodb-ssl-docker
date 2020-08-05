@@ -2,7 +2,7 @@
  
 ## Pre-requisites (if any)
 * If dokcer-compose is not installed, refer https://docs.docker.com/compose/install/
- 
+
 ## Step to start server
 
 docker-compose up -d
@@ -10,7 +10,7 @@ docker-compose up -d
 ## To verify Setup
 
 ### TLS verification
-* docker logs -f <mongo-server-container-file>
+* docker logs -f "<mongo-server-container-file>"
 * Look for log line with ["ctx":"listener","msg":"Waiting for connections","attr":{"port":27017,"ssl":"on"}}]
 
 
