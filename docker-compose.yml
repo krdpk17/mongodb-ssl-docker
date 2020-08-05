@@ -11,6 +11,10 @@ services:
     #   MONGO_INITDB_ROOT_PASSWORD: example
     volumes:
       - ./mongo_db_dir:/data/db
+      - ./mongod.conf:/etc/mongod.conf
+    command:
+        - '-f'
+        - '/etc/mongod.conf'
     ports:
       - 27017:27017
     logging:
