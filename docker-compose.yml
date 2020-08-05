@@ -11,6 +11,8 @@ services:
       MONGO_INITDB_ROOT_PASSWORD: example
     volumes:
       - ./mongo_db_dir:/data/db
+    ports:
+      - 27017:27017
     logging:
         driver: "json-file"
         options:
