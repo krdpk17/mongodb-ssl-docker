@@ -1,5 +1,8 @@
 # mongodb-docker
  
+## Pre-requisites (if any)
+* If dokcer-compose is not installed, refer https://docs.docker.com/compose/install/
+ 
 ## Step to start server
 
 docker-compose up -d
