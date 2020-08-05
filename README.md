@@ -22,7 +22,7 @@ https://github.com/krdpk17/mongoclient-helloworld
 ### To stop server
 docker-compose down
 
-### To disable non-sercure connection
+### To disable non-secure connection
 * Open the mongod.conf
 * Edit net.tls.mode to requireTLS
 
