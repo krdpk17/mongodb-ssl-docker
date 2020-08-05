@@ -6,6 +6,7 @@ services:
   mongo:
     image: mongo
     restart: always
+    #TODO: Enable it after auth setup
     # environment:
     #   MONGO_INITDB_ROOT_USERNAME: root
     #   MONGO_INITDB_ROOT_PASSWORD: example
