@@ -12,6 +12,7 @@ services:
     volumes:
       - ./mongo_db_dir:/data/db
       - ./mongod.conf:/etc/mongod.conf
+      - ./ssl/mongodb.pem:/etc/ssl/mongodb.pem
     command:
         - '-f'
         - '/etc/mongod.conf'
