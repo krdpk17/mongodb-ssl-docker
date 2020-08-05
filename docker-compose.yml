@@ -9,6 +9,13 @@ services:
     environment:
       MONGO_INITDB_ROOT_USERNAME: root
       MONGO_INITDB_ROOT_PASSWORD: example
+    volumes:
+      - ./mongo_db_dir:/data/db
+    logging:
+        driver: "json-file"
+        options:
+            max-size: "2m"
+            max-file: "2"
 
   mongo-express:
     image: mongo-express
@@ -18,3 +25,8 @@ services:
     environment:
       ME_CONFIG_MONGODB_ADMINUSERNAME: root
       ME_CONFIG_MONGODB_ADMINPASSWORD: example
+    logging:
+        driver: "json-file"
+        options:
+            max-size: "2m"
+            max-file: "2"
