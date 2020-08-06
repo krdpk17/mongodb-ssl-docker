@@ -38,7 +38,7 @@ https://github.com/krdpk17/mongoclient-helloworld
 
 ###  4.2. <a name='Toaccessserverviaweb'></a>To access server via web
 * In browser paste "http://localhost:8081" url and enter.  
-* Note: Browser should run in same machine where container is
+* Note: Browser should run in same machine where container is. If not, replace 'localhost' with the machine domain name.
 
 ###  4.3. <a name='Tostopserver'></a>To stop server
 docker-compose down
