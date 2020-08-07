@@ -1,16 +1,17 @@
 # mongodb-docker
  
-## Pre-requisites (if any)
-* If dokcer-compose is not installed, refer https://docs.docker.com/compose/install/
-
 ## Step to start server
-
-docker-compose up -d
+```
+sudo docker-compose up -d
+```
 
 ## To verify Setup
 
 ### TLS verification
-* docker logs -f [mongo-server-container-file]
+```
+sudo docker logs -f [mongo-server-container-file]
+```
+
 * Look for log line with ["ctx":"listener","msg":"Waiting for connections","attr":{"port":27017,"ssl":"on"}}]
 
 
@@ -23,7 +24,9 @@ https://github.com/krdpk17/mongoclient-helloworld
 * In browser paste "http://localhost:8081" url and enter
 
 ### To stop server
-docker-compose down
+```
+sudo docker-compose down
+```
 
 ### To disable non-secure connection
 * Open the mongod.conf
@@ -33,6 +36,3 @@ docker-compose down
 
 * Open the mongod.conf
 * Edit net.tls.mode to disable
-
-### Links
-https://sites.google.com/site/jbsakabffoi12449ujkn/
