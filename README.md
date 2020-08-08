@@ -18,7 +18,8 @@ sudo docker logs -f [mongo-server-container-file]
 ## Other hints
 
 ### Python client to test TLS
-https://github.com/krdpk17/mongoclient-helloworld
+
+https://github.com/Aanantya/mongoclient-helloworld
 
 ### To access server via web
 * In browser paste "http://localhost:8081" url and enter
